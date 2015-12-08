@@ -1,0 +1,21 @@
+﻿Сборка начата 08.12.2015 20:56:53.
+     1>Проект "D:\Универ\ИИП и игра\Mini-Game\Ghost\Ghost\Ghost.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I"D:\Универ\ИИП и игра\SFML-2.3.2\include" /ZI /nologo /W3 /WX- /sdl /Od /D SFML_DYNAMIC /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt main.cpp
+         main.cpp
+     1>d:\универ\иип и игра\mini-game\ghost\ghost\view.h(9): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+     1>d:\универ\иип и игра\mini-game\ghost\ghost\main.cpp(54): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+     1>d:\универ\иип и игра\mini-game\ghost\ghost\main.cpp(100): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+     1>d:\универ\иип и игра\mini-game\ghost\ghost\main.cpp(140): warning C4244: аргумент: преобразование "const int" в "float", возможна потеря данных
+     1>d:\универ\иип и игра\mini-game\ghost\ghost\main.cpp(159): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+     1>d:\универ\иип и игра\mini-game\ghost\ghost\main.cpp(167): warning C4244: инициализация: преобразование "sf::Int64" в "float", возможна потеря данных
+     1>d:\универ\иип и игра\mini-game\ghost\ghost\main.cpp(49): warning C4715: map_creat: значение возвращается не при всех путях выполнения
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Универ\ИИП и игра\Mini-Game\Ghost\x64\Debug\Ghost.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Универ\ИИП и игра\SFML-2.3.2\lib" "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-system-d.lib" "sfml-audio-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\Универ\ИИП и игра\Mini-Game\Ghost\x64\Debug\Ghost.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Универ\ИИП и игра\Mini-Game\Ghost\x64\Debug\Ghost.lib" /MACHINE:X64 x64\Debug\main.obj
+     1>main.obj : warning LNK4075: не учитывается "/EDITANDCONTINUE" из-за спецификации "/OPT:LBR"
+         Ghost.vcxproj -> D:\Универ\ИИП и игра\Mini-Game\Ghost\x64\Debug\Ghost.exe
+     1>Сборка проекта "D:\Универ\ИИП и игра\Mini-Game\Ghost\Ghost\Ghost.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+Затраченное время: 00:00:01.59
