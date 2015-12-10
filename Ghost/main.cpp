@@ -1,29 +1,5 @@
-#include <SFML/Graphics.hpp>
-#include <iostream>
-#include <string>
-#include <sstream>
-#include <ctime>
-#include <cstdlib>
-#include <signal.h>
-#include "view.h"
 #include "const.h"
  
-using namespace sf;
-struct structImages
-{
-	Image image;
-	String file;
-	Texture texture;
-	Sprite sprite;
-	int pos_x;
-	int pos_y;
-};
-struct  structMap
-{
-	int mass_map[100];
-	int long_map;
-	Sprite sprite;
-};
 void loadImage(struct structImages& image, String file)
 {
 	image.image.loadFromFile(file);
@@ -177,11 +153,6 @@ void DrawGame(RenderWindow& window, structImages player, structImages background
 
 void Run_Game(RenderWindow& window)
 {
-	structImages map_load;
-	structImages player;
-	structImages background;
-	structMap map;
-
 	view.setSize(sf::Vector2f(WINDOW_X, WINDOW_Y));
 	view.setCenter(WINDOW_X / 2, view.getSize().y - 300);
 	InitializationMap(map_load, map);
@@ -189,20 +160,13 @@ void Run_Game(RenderWindow& window)
 	player.sprite.setPosition(100, -50);
 	loadImage(background, "D:/Универ/ИИП и игра/Mini-Game/Ghost/2.png");
 	background.sprite.setPosition(0, 0);
-
-	Font font;
-	Text info;
 	InitializationText(font, info);
-
-	int out_time = OUT_TC;
-	int num_score = 0;
 
 	float CurrentFrame = 0;
 	Clock clock;
 	clock.restart();
 	Vector2f f;
 	srand(time(NULL));
-	int stage = 0;
 	while (window.isOpen())
 	{
 		window.clear(sf::Color::White);
